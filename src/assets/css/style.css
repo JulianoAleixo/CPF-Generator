@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #227E22;
+    --secondary-color: #63A211;
+    --gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    --white-gradient: linear-gradient(45deg, #dfe9f3, #ffffff);
+    --shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gradient);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    height: 280px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.container h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.cpf-gerado {
+    font-size: 2em;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 5px;
+}
+
+.innerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.novo {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: var(--primary-color);
+    color:#fff;
+    border-radius: 10px;
+    border: none;
+    transition: all 200ms ease-in-out;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+}
+
+.novo:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
